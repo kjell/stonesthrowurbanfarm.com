@@ -20,3 +20,8 @@ fix_links:
 		sed -i "" "s|/$$page\"|/$$page.html\"|g" stones-throw.herokuapp.com/*.html; \
 	done
 
+fix_text:
+	for page in $(pages); do \
+		ftfy stones-throw.herokuapp.com/$$page.html > stones-throw.herokuapp.com/$$page.html.fixed; \
+		mv stones-throw.herokuapp.com/$$page.html{.fixed,}; \
+	done
