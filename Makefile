@@ -3,6 +3,10 @@ SHELL := /bin/bash
 stones-throw.herokuapp.com:
 	wget -r -l inf 'https://stones-throw.herokuapp.com'	
 
+rest:
+	rsync -avz ~/Sites/stones/public/img/ stones-throw.herokuapp.com/img
+	cp ~/Sites/stones/public/farms.geojson stones-throw.herokuapp.com/
+
 pages = contact csa faq farm farmers find-us get-involved signup why-csa
 
 html: stones-throw.herokuapp.com
