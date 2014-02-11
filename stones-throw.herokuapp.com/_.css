@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "Delicious";
+  src: url(/font/delicious-bold-webfont.eot) format('embedded-opentype'), url(/font/delicious-bold-webfont.woff) format('woff'), url(/font/delicious-bold-webfont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Delicious Roman";
+  src: url(/font/delicious-roman-webfont.eot) format('embedded-opentype'), url(/font/delicious-roman-webfont.woff) format('woff'), url(/font/delicious-roman-webfont.ttf) format('truetype');
+}
+
+/* line 8, /app/config/../views/asa.sass */
+html {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(/img/runner-left.jpg), url(/img/runner-right.jpg);
+  background-position: top left, top right;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  font-family: Arial;
+}
+
+/* line 17, /app/config/../views/asa.sass */
+body {
+  min-height: 100%;
+  background: url(/img/beige-pattern.png);
+  -webkit-box-shadow: 4px 0px 15px 5px #333333;
+  -moz-box-shadow: 4px 0px 15px 5px #333333;
+  box-shadow: 4px 0px 15px 5px #333333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+/* line 25, /app/config/../views/asa.sass */
+body p {
+  margin: 0.5em 0;
+}
+
+/* line 28, /app/config/../views/asa.sass */
+#root {
+  min-height: 100%;
+}
+
+/* line 37, /app/config/../views/asa.sass */
+h1, h2, h3, h4, h5, h6, h7, dl dt {
+  color: #3b6352;
+  font: 150% Delicious;
+  margin: 1em 0 0.5em 0;
+}
+
+/* line 42, /app/config/../views/asa.sass */
+h6 {
+  font-size: 100%;
+}
+
+/* line 46, /app/config/../views/asa.sass */
+a {
+  color: #940012;
+}
+
+/* line 50, /app/config/../views/asa.sass */
+#nav + section {
+  clear: both;
+  padding-top: 1em;
+}
+
+/* line 54, /app/config/../views/asa.sass */
+#nav {
+  width: 100%;
+  clear: both;
+  z-index: 3;
+  position: relative;
+}
+/* line 60, /app/config/../views/asa.sass */
+#nav ul, #nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+/* line 67, /app/config/../views/asa.sass */
+#nav h2, #nav a {
+  color: #940012 !important;
+}
+/* line 70, /app/config/../views/asa.sass */
+#nav a {
+  text-decoration: none;
+}
+/* line 72, /app/config/../views/asa.sass */
+#nav a:hover, #nav a:hover h2 {
+  color: #3b6352 !important;
+}
+/* line 75, /app/config/../views/asa.sass */
+#nav h2 {
+  margin: 0;
+  padding: 0;
+}
+/* line 79, /app/config/../views/asa.sass */
+#nav .home {
+  width: 250px;
+  height: 95px;
+  margin: 0 auto;
+  border-width: 0;
+  text-indent: -1000em;
+  background: url(/img/logo.png) no-repeat center;
+}
+/* line 88, /app/config/../views/asa.sass */
+#nav .secondary {
+  display: none;
+}
+/* line 92, /app/config/../views/asa.sass */
+#nav li.about:hover, #nav li.about:hover nav, #nav li.csa:hover, #nav li.csa:hover nav {
+  -webkit-box-shadow: 6px 8px 15px #999999;
+  -moz-box-shadow: 6px 8px 15px #999999;
+  box-shadow: 6px 8px 15px #999999;
+}
+/* line 95, /app/config/../views/asa.sass */
+#nav nav.subnav {
+  z-index: 100;
+  position: absolute;
+  left: -9999em;
+  background: url(/img/beige-pattern.png);
+  width: 100%;
+  font-size: 80%;
+}
+/* line 103, /app/config/../views/asa.sass */
+#nav nav.subnav li {
+  margin: 0.25em;
+  border-top: none;
+}
+/* line 108, /app/config/../views/asa.sass */
+#nav li:hover nav.subnav {
+  left: 0;
+}
+@media screen and (min-width: 35em) {
+  /* line 112, /app/config/../views/asa.sass */
+  #nav li.home {
+    float: none !important;
+  }
+  /* line 114, /app/config/../views/asa.sass */
+  #nav li.about {
+    clear: both;
+  }
+  /* line 117, /app/config/../views/asa.sass */
+  #nav > ul > li {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 51em) {
+  /* line 122, /app/config/../views/asa.sass */
+  #nav + section {
+    padding-top: 0em !important;
+  }
+  /* line 125, /app/config/../views/asa.sass */
+  #nav > ul > li {
+    width: 16%;
+    border-top: 3px solid #8f8e8d;
+    padding-top: 0.5em;
+    margin-top: 1.7em;
+  }
+  /* line 131, /app/config/../views/asa.sass */
+  #nav li.about {
+    clear: none;
+  }
+  /* line 133, /app/config/../views/asa.sass */
+  #nav li.home {
+    float: left !important;
+    margin: 0 2em 0 0;
+  }
+}
+
+/* line 149, /app/config/../views/asa.sass */
+figcaption {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  color: #d4d2c0;
+  font-size: 200%;
+  max-width: 7em;
+  font-family: Delicious Roman;
+  background: rgba(15, 15, 15, 0.5);
+  padding: 0.25em 0.5em;
+}
+
+/* line 161, /app/config/../views/asa.sass */
+#intro figure {
+  position: relative;
+  max-height: 341px;
+  overflow: hidden;
+}
+/* line 166, /app/config/../views/asa.sass */
+#intro img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 171, /app/config/../views/asa.sass */
+#intro aside .callout {
+  display: block;
+  text-indent: -1000em;
+  background: url(/img/stone.png) no-repeat;
+  width: 260px;
+  height: 180px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 35em) {
+  /* line 180, /app/config/../views/asa.sass */
+  #intro .content {
+    width: 64%;
+    float: left;
+  }
+  /* line 184, /app/config/../views/asa.sass */
+  #intro aside {
+    width: 33%;
+    float: right;
+  }
+  /* line 188, /app/config/../views/asa.sass */
+  #intro aside .callout {
+    z-index: 3;
+    position: relative;
+    margin-top: -3em !important;
+  }
+}
+
+/* line 194, /app/config/../views/asa.sass */
+#root_footer {
+  clear: both;
+}
+
+/* line 196, /app/config/../views/asa.sass */
+#footer {
+  margin-top: 25vh;
+}
+/* line 198, /app/config/../views/asa.sass */
+#footer ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 10, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer ul html, #footer ul body {
+  height: 100%;
+}
+/* line 12, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer ul #root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -63px;
+}
+/* line 18, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer ul #root #root_footer {
+  height: 63px;
+}
+/* line 20, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer ul #footer {
+  clear: both;
+  position: relative;
+  height: 63px;
+}
+/* line 60, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li:first-child, #footer ul li.first {
+  padding-left: 0;
+}
+/* line 49, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, /app/vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li.last {
+  padding-right: 0;
+}
+/* line 205, /app/config/../views/asa.sass */
+#footer li {
+  margin: 1em;
+}
+/* line 208, /app/config/../views/asa.sass */
+#footer li p {
+  margin: 0;
+}
+
+/* line 212, /app/config/../views/asa.sass */
+#farms-produce #map-wrap {
+  height: 400px;
+}
+
+/* line 215, /app/config/../views/asa.sass */
+input[type=radio] {
+  margin: 0 0.25em;
+}
+
+/* line 218, /app/config/../views/asa.sass */
+#about article {
+  margin-bottom: 2em;
+}
+/* line 221, /app/config/../views/asa.sass */
+#about article img {
+  margin: 0 0 1em;
+  clear: both;
+}
+/* line 225, /app/config/../views/asa.sass */
+#about article p {
+  margin: 0;
+}
+
+@media screen and (min-width: 55em) {
+  /* line 229, /app/config/../views/asa.sass */
+  #about article {
+    width: 45%;
+    margin: 1em;
+    float: left;
+    min-height: 543px;
+  }
+  /* line 235, /app/config/../views/asa.sass */
+  #about article img {
+    float: right;
+    max-height: 300px;
+    margin: 0 1em 1em 1em;
+    clear: both;
+  }
+}
+@media screen and (min-width: 35em) {
+  /* line 242, /app/config/../views/asa.sass */
+  .content, article {
+    float: left;
+    width: 64%;
+  }
+
+  /* line 246, /app/config/../views/asa.sass */
+  aside {
+    float: right;
+    width: 33%;
+  }
+
+  /* line 250, /app/config/../views/asa.sass */
+  #csa {
+    width: 55%;
+    float: right;
+    margin-right: 1em;
+  }
+
+  /* line 255, /app/config/../views/asa.sass */
+  #signup {
+    clear: left;
+    width: 40%;
+    margin-right: 5em;
+  }
+
+  /* line 261, /app/config/../views/asa.sass */
+  #farms-produce #map-wrap {
+    float: left;
+    width: 64%;
+    height: 400px;
+  }
+  /* line 266, /app/config/../views/asa.sass */
+  #farms-produce .content {
+    float: right;
+    width: 33%;
+  }
+}
+/* line 270, /app/config/../views/asa.sass */
+aside {
+  margin-top: 1.83em;
+}
+/* line 272, /app/config/../views/asa.sass */
+aside .testimonial {
+  font-size: 150%;
+  color: #3b6352;
+  max-width: 13em;
+  font-family: Delicious Roman;
+}
+/* line 278, /app/config/../views/asa.sass */
+aside .testimonial:before {
+  content: '"';
+}
+/* line 280, /app/config/../views/asa.sass */
+aside .testimonial:after {
+  content: '"';
+}
+/* line 283, /app/config/../views/asa.sass */
+aside .testimonial + cite {
+  line-height: 1.5em;
+  margin-left: 0.5em;
+}
+
+/* line 287, /app/config/../views/asa.sass */
+img.wide, img[alt=Farming] {
+  width: 100%;
+}
+
+/* line 289, /app/config/../views/asa.sass */
+img.tall, img[alt=Composting] {
+  float: left;
+  margin: 0 1em 1em;
+}
+
+/* line 294, /app/config/../views/asa.sass */
+dl dd {
+  margin: 1em 0;
+}
+
+/* line 297, /app/config/../views/asa.sass */
+iframe {
+  max-width: 100%;
+}
+
+/* line 300, /app/config/../views/asa.sass */
+figure#pickup {
+  position: relative;
+}
+/* line 303, /app/config/../views/asa.sass */
+figure#pickup:hover figcaption {
+  display: none;
+}
+
+/* line 306, /app/config/../views/asa.sass */
+#map {
+  width: 100%;
+  height: 500px;
+}

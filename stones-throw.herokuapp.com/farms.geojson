@@ -1,0 +1,215 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.254112,
+                    44.951286,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2820 15th Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.288963,
+                    44.957088,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2505 Aldrich Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.274437,
+                    44.952938,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2720 2nd Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.258736,
+                    44.951363,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2817 11th Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.257797,
+                    44.957096,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2502 12th Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.254982,
+                    44.957954,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2432 14th Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.254578,
+                    44.956745,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "2513 14th Ave S",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.126656,
+                    44.959984,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "625 Dale St N",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.126663,
+                    44.961018,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "Blair - 659 Dale St N",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.124947,
+                    44.959606,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "585 W Thomas Ave",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.117432,
+                    44.976837,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "1186 Cumberland St",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.115463,
+                    44.977394,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "361 Maryland Ave W",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.140266,
+                    44.965591,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "946 W Pierce Butler Route",
+                "marker-size": "small"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.111221,
+                    44.956493,
+                    0
+                ]
+            },
+            "properties": {
+                "title": "260 Sherburne Avenue, Saint Paul, Minnesota",
+                "marker-size": "small"
+            }
+        }
+    ]
+}
