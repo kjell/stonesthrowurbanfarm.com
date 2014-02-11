@@ -26,3 +26,6 @@ fix_links_and_text:
 		ftfy stones-throw.herokuapp.com/$$page.html > stones-throw.herokuapp.com/$$page.html.fixed; \
 		mv stones-throw.herokuapp.com/$$page.html{.fixed,}; \
 	done
+	ftfy stones-throw.herokuapp.com/index.html > stones-throw.herokuapp.com/index.html.fixed
+	mv stones-throw.herokuapp.com/index.html{.fixed,}
+	sed -i '' 's/©/\&copy;/g' stones-throw.herokuapp.com/*.html
