@@ -1,31 +1,33 @@
 SHELL := /bin/bash
 
-stones-throw.herokuapp.com:
+wget:
 	wget -r -l inf 'https://stones-throw.herokuapp.com'	
+	cp -R stones-throw.herokuapp.com/* .
+	rm -rf stones-throw.herokuapp.com
 
 rest:
-	rsync -avz ~/Sites/stones/public/img/ stones-throw.herokuapp.com/img
-	cp ~/Sites/stones/public/farms.geojson stones-throw.herokuapp.com/
+	rsync -avz ~/Sites/stones/public/img/ img
+	cp ~/Sites/stones/public/farms.geojson .
 
 pages = contact csa faq farm farmers find-us get-involved signup why-csa
 
-html: stones-throw.herokuapp.com
+html:
 	for page in $(pages); do \
-		sed -i "" 's/bq/blockquote/g' stones-throw.herokuapp.com/$$page; \
-		tidy -i -utf8 stones-throw.herokuapp.com/$$page > stones-throw.herokuapp.com/$$page.html; \
-		rm stones-throw.herokuapp.com/$$page; \
+		sed -i "" 's/bq/blockquote/g' $$page; \
+		tidy -i -utf8 $$page > $$page.html; \
+		rm $$page; \
 		ls; \
 	done
-	sed -i "" 's/bq/blockquote/g' stones-throw.herokuapp.com/index.html; \
-	tidy -i -utf8 stones-throw.herokuapp.com/index.html > stones-throw.herokuapp.com/index.html.tidy; \
-	mv stones-throw.herokuapp.com/index.html{.tidy,}
+	sed -i "" 's/bq/blockquote/g' index.html; \
+	tidy -i -utf8 index.html > index.html.tidy; \
+	mv index.html{.tidy,}
 
 fix_links_and_text:
 	for page in $(pages); do \
-		sed -i "" "s|/$$page\"|/$$page.html\"|g" stones-throw.herokuapp.com/*.html; \
-		ftfy stones-throw.herokuapp.com/$$page.html > stones-throw.herokuapp.com/$$page.html.fixed; \
-		mv stones-throw.herokuapp.com/$$page.html{.fixed,}; \
+		sed -i "" "s|/$$page\"|/$$page.html\"|g" *.html; \
+		ftfy $$page.html > $$page.html.fixed; \
+		mv $$page.html{.fixed,}; \
 	done
-	ftfy stones-throw.herokuapp.com/index.html > stones-throw.herokuapp.com/index.html.fixed
-	mv stones-throw.herokuapp.com/index.html{.fixed,}
-	sed -i '' 's/©/\&copy;/g' stones-throw.herokuapp.com/*.html
+	ftfy index.html > index.html.fixed
+	mv index.html{.fixed,}
+	sed -i '' 's/©/\&copy;/g' *.html
