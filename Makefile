@@ -9,6 +9,7 @@ html: stones-throw.herokuapp.com
 	for page in $(pages); do \
 		sed -i "" 's/bq/blockquote/g' stones-throw.herokuapp.com/$$page; \
 		tidy -i -utf8 stones-throw.herokuapp.com/$$page > stones-throw.herokuapp.com/$$page.html; \
+		rm stones-throw.herokuapp.com/$$page; \
 		ls; \
 	done
 	sed -i "" 's/bq/blockquote/g' stones-throw.herokuapp.com/index.html; \
