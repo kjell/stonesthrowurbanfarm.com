@@ -20,13 +20,9 @@ html: stones-throw.herokuapp.com
 	tidy -i -utf8 stones-throw.herokuapp.com/index.html > stones-throw.herokuapp.com/index.html.tidy; \
 	mv stones-throw.herokuapp.com/index.html{.tidy,}
 
-fix_links:
+fix_links_and_text:
 	for page in $(pages); do \
 		sed -i "" "s|/$$page\"|/$$page.html\"|g" stones-throw.herokuapp.com/*.html; \
-	done
-
-fix_text:
-	for page in $(pages); do \
 		ftfy stones-throw.herokuapp.com/$$page.html > stones-throw.herokuapp.com/$$page.html.fixed; \
 		mv stones-throw.herokuapp.com/$$page.html{.fixed,}; \
 	done
